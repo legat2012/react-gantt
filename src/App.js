@@ -1,6 +1,5 @@
 import './App.css';
-import endOfYear from 'date-fns/endOfYear';
-import getYear from 'date-fns/getYear';
+import GanttDiagram from './components/charts/gantt-diagram';
 
 const histogramRows = [
     {
@@ -38,6 +37,7 @@ const histogramRows = [
 const App = () => {
   return (
     <>
+        <GanttDiagram timeIntervals={histogramRows}/>
     </>
   );
 }
